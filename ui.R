@@ -3,7 +3,7 @@ library(shinydashboard)
 
 dashboardPage(
   dashboardHeader(
-    title = "Basic dashboard"),
+    title = "Basic dashboard",
     tags$head(
       HTML(
         "
