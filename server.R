@@ -4,6 +4,6 @@ library(shinydashboard)
 server <- function(input, output) {
   
   output$keepAlive <- renderText({
-    paste("Приветствую")
+    paste("По всем вопросам можно написать автору https://t.me/baikulov")
   })
 }
