@@ -20,6 +20,7 @@ dashboardPage(
           </script>
           "
       )
+    )
   ),
   dashboardSidebar(),
   dashboardBody(
