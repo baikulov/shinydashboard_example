@@ -1,12 +1,10 @@
 library(shiny)
 library(shinydashboard)
 
-ui <- dashboardPage(
-  dashboardHeader(),
-  dashboardSidebar(),
-  dashboardBody()
-)
-
-server <- function(input, output) { }
-
-shinyApp(ui, server)
+server <- function(input, output) {
+  
+  output$keepAlive <- renderText({
+    req(input$count)
+    paste("keep alive ", input$count)
+  })
+}
